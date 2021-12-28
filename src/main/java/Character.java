@@ -3,11 +3,11 @@ import abilities.basic.BasicAbility;
 
 public class Character {
     @AutoInjectable
-    BasicAbility basicAbility;
+    private BasicAbility basicAbility;
     @AutoInjectable
-    AdditionalAbility additionalAbility;
+    private AdditionalAbility additionalAbility;
 
-    void showAbilities(){
+    public void showAbilities(){
         basicAbility.showBasicAbility();
         additionalAbility.showAdditionalAbility();
     }
