@@ -1,4 +1,7 @@
-import java.io.FileInputStream;
+package injection;
+
+import injection.AutoInjectable;
+
 import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
@@ -10,7 +13,7 @@ public class Injector {
 
     public Injector(String propertiesPath) throws IOException {
         properties = new Properties();
-        properties.load(new FileInputStream(propertiesPath));
+        properties.load(getClass().getClassLoader().getResourceAsStream(propertiesPath));
     }
 
     public <T> T inject(T object) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {

@@ -1,5 +1,8 @@
+package character;
+
 import abilities.additional.AdditionalAbility;
 import abilities.basic.BasicAbility;
+import injection.AutoInjectable;
 
 public class Character {
     @AutoInjectable
