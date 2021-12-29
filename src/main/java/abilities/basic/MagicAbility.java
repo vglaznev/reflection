@@ -3,6 +3,6 @@ package abilities.basic;
 public class MagicAbility implements BasicAbility{
     @Override
     public void showBasicAbility() {
-        System.out.println("I can cast spells! ");
+        System.out.println("I can cast spells! (Basic ability: Magic ability)");
     }
 }

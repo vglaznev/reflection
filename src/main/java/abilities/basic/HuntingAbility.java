@@ -3,6 +3,6 @@ package abilities.basic;
 public class HuntingAbility implements BasicAbility{
     @Override
     public void showBasicAbility() {
-        System.out.println("Look, I can get some food! ");
+        System.out.println("Look, I can get some food! (Basic ability: Hunting ability)");
     }
 }
