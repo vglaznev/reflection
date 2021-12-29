@@ -1,5 +1,9 @@
 package abilities.additional;
 
+/**
+ * One of the additional abilities. Allows the character hear the quietest sounds.
+ * @see AdditionalAbility
+ */
 public class SuperHearingAbility implements AdditionalAbility{
     @Override
     public void showAdditionalAbility() {

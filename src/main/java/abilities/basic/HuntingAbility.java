@@ -1,5 +1,9 @@
 package abilities.basic;
 
+/**
+ * One of the basic abilities. Allows the character to hunt and get food.
+ * @see BasicAbility
+ */
 public class HuntingAbility implements BasicAbility{
     @Override
     public void showBasicAbility() {
